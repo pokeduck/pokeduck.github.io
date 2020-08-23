@@ -3,13 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 嘿嘿嘿
+subtitle: '碼農筆記'
+description: '太平洋小島小小碼農的開發筆記'
+keywords: 
+- iOS
+- macOS
+- hackintosh
+- developer
+author: Andrea K.
+language: zh-tw
+timezone: 'Asia/Taipei'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -31,6 +35,32 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+# Symbols-Counting
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 4
+  wpm: 275
+  suffix: "mins."
+  separated_meta: true
+  item_text_post: true
+  item_text_total: false
+
+# Reading Progress
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
+
+
+vendors:
+  reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
+
+
+
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -50,9 +80,9 @@ highlight:
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -98,7 +128,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
